@@ -1,47 +1,82 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import TheHeader from './components/TheHeader.vue'
+import HeroSection from './components/HeroSection.vue'
+import FeaturesSection from './components/FeaturesSection.vue'
+import TestimonialsSection from './components/TestimonialsSection.vue'
+import LearningHub from './components/LearningHub.vue'
+import FaqSection from './components/FaqSection.vue'
+import CtaSection from './components/CtaSection.vue'
+import TheFooter from './components/TheFooter.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <div id="app">
+    <TheHeader />
+    <main>
+      <HeroSection />
+      <FeaturesSection />
+      <TestimonialsSection />
+      <LearningHub />
+      <FaqSection />
+      <CtaSection />
+    </main>
+    <TheFooter />
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
+<style>
+#app {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+* {
+  box-sizing: border-box;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
+main {
+  margin-top: 80px; /* Account for fixed header */
+}
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
+/* Global button styles */
+.btn {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  font-family: inherit;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+/* Global link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Responsive container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
   }
 }
 </style>
