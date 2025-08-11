@@ -379,21 +379,41 @@ export default function LTCLabKidsV2() {
         <div className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm">
           <div className="mb-4">
             <h3 className="text-lg font-semibold tracking-tight">Qeydiyyat formu</h3>
-            <p className="mt-1 text-sm text-neutral-600">Google Form-u doldurun — komandamız sizinlə əlaqə saxlasın.</p>
+            <p className="mt-1 text-sm text-neutral-600">Qısa forma — komandamız sizinlə əlaqə saxlasın.</p>
           </div>
-          <div className="flex flex-col items-center justify-center py-8">
-            <a
-              href="https://forms.gle/gaS7ydmosknDNXfN7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-indigo-600 to-fuchsia-600 px-8 py-4 text-lg font-medium text-white shadow-sm transition hover:opacity-95"
-            >
-              Formaya keç <ArrowRight className="h-5 w-5" />
-            </a>
-            <p className="mt-4 text-sm text-neutral-600">
-              Qeydiyyat üçün Google Formu doldurun.
-            </p>
-          </div>
+          <form className="grid gap-4 md:grid-cols-2">
+            <div className="grid gap-1">
+              <label className="text-xs text-neutral-600">Valideynin adı</label>
+              <input className="rounded-xl border border-neutral-300 bg-white px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-indigo-600" placeholder="Ad, Soyad" />
+            </div>
+            <div className="grid gap-1">
+              <label className="text-xs text-neutral-600">Əlaqə nömrəsi</label>
+              <input className="rounded-xl border border-neutral-300 bg-white px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-indigo-600" placeholder="(+994)" />
+            </div>
+            <div className="grid gap-1">
+              <label className="text-xs text-neutral-600">Uşağın yaşı</label>
+              <input type="number" min="8" max="14" className="rounded-xl border border-neutral-300 bg-white px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-indigo-600" placeholder="8–14" />
+            </div>
+            <div className="grid gap-1">
+              <label className="text-xs text-neutral-600">Seçilən modul</label>
+              <select className="rounded-xl border border-neutral-300 bg-white px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-indigo-600">
+                <option>Hamısı</option>
+                <option>Proqramlaşdırma</option>
+                <option>Veb development</option>
+                <option>Robototexnika</option>
+                <option>Süni intellekt</option>
+              </select>
+            </div>
+            <div className="md:col-span-2 grid gap-1">
+              <label className="text-xs text-neutral-600">Qeyd (opsional)</label>
+              <textarea rows={4} className="rounded-xl border border-neutral-300 bg-white px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-indigo-600" placeholder="Qısaca qeydiniz"></textarea>
+            </div>
+            <div className="md:col-span-2">
+              <button type="button" className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-indigo-600 to-fuchsia-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:opacity-95">
+                Sorğunu göndər <ArrowRight className="h-4 w-4" />
+              </button>
+            </div>
+          </form>
         </div>
       </section>
 
