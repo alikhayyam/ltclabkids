@@ -292,7 +292,7 @@ export default function LTCLabKidsV2() {
             <ImageLogoChip src="/CSS3_logo.svg" label="CSS3" />
             <ImageLogoChip src="/Unofficial_JavaScript_logo_2.svg.png" label="JavaScript" />
             <LogoChip abbr="Ar" label="Arduino" gradient="from-emerald-500 to-teal-600" />
-            <LogoChip abbr="μB" label="micro:bit" gradient="from-green-500 to-emerald-700" />
+            <ImageLogoChip src="/microbit_logo_icon_248480.png" label="micro:bit" />
             <LogoChip abbr="TM" label="Teachable Machine" gradient="from-indigo-500 to-fuchsia-600" />
             <LogoChip abbr="GH" label="GitHub" gradient="from-neutral-800 to-neutral-700" />
             <ImageLogoChip src="/openai.svg" label="OpenAI · GenAI" />
