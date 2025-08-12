@@ -291,7 +291,7 @@ export default function LTCLabKidsV2() {
             <ImageLogoChip src="/html5.png" label="HTML5" />
             <ImageLogoChip src="/CSS3_logo.svg" label="CSS3" />
             <ImageLogoChip src="/Unofficial_JavaScript_logo_2.svg.png" label="JavaScript" />
-            <LogoChip abbr="Ar" label="Arduino" gradient="from-emerald-500 to-teal-600" />
+            <ImageLogoChip src="/arduino-1.svg" label="Arduino" />
             <LogoChip abbr="μB" label="micro:bit" gradient="from-green-500 to-emerald-700" />
             <LogoChip abbr="TM" label="Teachable Machine" gradient="from-indigo-500 to-fuchsia-600" />
             <LogoChip abbr="GH" label="GitHub" gradient="from-neutral-800 to-neutral-700" />
