@@ -19,6 +19,8 @@ import {
   Rocket,
 } from "lucide-react";
 
+const logoUrl = new URL("./Pictures/LTClabLOGO.png", import.meta.url).href;
+
 // Vibrant, playful + still modern. Tailwind required.
 // Language: Azerbaijanca
 
@@ -120,7 +122,7 @@ export default function LTCLabKidsV2() {
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
           <div className="flex items-center gap-3">
             <img
-              src="/Pictures/LTClabLOGO.png"
+              src={logoUrl}
               alt="LTC Lab Kids Logo"
               className="h-10 w-10 rounded-2xl object-contain shadow-sm"
             />
@@ -279,7 +281,7 @@ export default function LTCLabKidsV2() {
             <h3 className="text-lg font-semibold tracking-tight">Öyrənəcəyin texnologiyalar</h3>
           </div>
           <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-            <ImageLogoChip src="/Pictures/LTClabLOGO.png" label="LTC Lab" />
+            <ImageLogoChip src={logoUrl} label="LTC Lab" />
             <LogoChip abbr="Sc" label="Scratch" gradient="from-orange-400 to-pink-500" />
             <LogoChip abbr="H5" label="HTML5" gradient="from-orange-500 to-red-500" />
             <LogoChip abbr="CSS" label="CSS3" gradient="from-sky-500 to-blue-600" />
@@ -417,7 +419,7 @@ export default function LTCLabKidsV2() {
       <footer className="border-t border-neutral-200 bg-white/70">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-6 text-sm text-neutral-600">
           <img
-            src="/Pictures/LTClabLOGO.png"
+            src={logoUrl}
             alt="LTC Lab Kids Logo"
             className="h-8 w-8 rounded-2xl object-contain"
           />
