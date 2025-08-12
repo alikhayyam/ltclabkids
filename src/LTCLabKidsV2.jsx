@@ -51,11 +51,11 @@ const ModuleCard = ({ icon: Icon, title, desc, items, gradient }) => (
   >
     <div className={`absolute inset-x-0 top-0 h-1.5 ${gradient}`} />
     <div className="p-5">
-      <div className="inline-flex items-center gap-2 rounded-xl bg-neutral-50 px-3 py-2 text-sm font-medium">
-        <span className={`grid h-7 w-7 place-items-center rounded-xl ${gradient} text-white`}>
+      <div className="flex flex-wrap w-full items-center gap-2 rounded-xl bg-neutral-50 px-3 py-2 text-sm font-medium">
+        <span className={`flex-shrink-0 grid h-7 w-7 place-items-center rounded-xl ${gradient} text-white`}>
           <Icon className="h-4 w-4" />
         </span>
-        <span>{title}</span>
+        <span className="flex-1 break-words">{title}</span>
       </div>
       <p className="mt-3 text-sm text-neutral-600">{desc}</p>
       <ul className="mt-4 flex flex-col gap-2 text-sm text-neutral-800">
