@@ -322,15 +322,25 @@ export default function LTCLabKidsV2() {
         </div>
       </section>
 
-      {/* Gallery placeholders */}
+      {/* Gallery */}
       <section id="gallery" className="mx-auto max-w-6xl px-4 py-10">
         <div className="mb-4 flex items-center gap-2">
           <GraduationCap className="h-5 w-5" />
-          <h3 className="text-lg font-semibold tracking-tight">Galereya (şəkil yerləri)</h3>
+          <h3 className="text-lg font-semibold tracking-tight">Galereya</h3>
         </div>
         <div className="grid gap-4 md:grid-cols-3">
-          {Array.from({ length: 3 }).map((_, i) => (
-            <div key={i} className="relative h-44 overflow-hidden rounded-2xl border border-neutral-200 bg-gradient-to-br from-neutral-50 to-white shadow-sm">
+          <div className="relative h-44 overflow-hidden rounded-2xl border border-neutral-200 bg-gradient-to-br from-neutral-50 to-white shadow-sm">
+            <img
+              src="/ltclabkidsbirinci.jpg"
+              alt="Galereya şəkil 1"
+              className="h-full w-full object-cover"
+            />
+          </div>
+          {Array.from({ length: 2 }).map((_, i) => (
+            <div
+              key={i}
+              className="relative h-44 overflow-hidden rounded-2xl border border-neutral-200 bg-gradient-to-br from-neutral-50 to-white shadow-sm"
+            >
               <div className="absolute inset-0 bg-[radial-gradient(50%_50%_at_50%_0%,rgba(99,102,241,0.15),transparent_65%)]" />
               <div className="absolute -right-10 -bottom-10 h-40 w-40 rounded-full bg-gradient-to-br from-amber-300 to-pink-400 blur-2xl opacity-40" />
               <div className="absolute inset-0 grid place-items-center text-xs text-neutral-500">Şəkil üçün yer</div>
