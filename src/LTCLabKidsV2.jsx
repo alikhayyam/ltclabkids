@@ -295,7 +295,7 @@ export default function LTCLabKidsV2() {
             <LogoChip abbr="μB" label="micro:bit" gradient="from-green-500 to-emerald-700" />
             <LogoChip abbr="TM" label="Teachable Machine" gradient="from-indigo-500 to-fuchsia-600" />
             <LogoChip abbr="GH" label="GitHub" gradient="from-neutral-800 to-neutral-700" />
-            <LogoChip abbr="AI" label="OpenAI · GenAI" gradient="from-purple-600 to-indigo-700" />
+            <ImageLogoChip src="/openai.svg" label="OpenAI · GenAI" />
           </div>
         </div>
       </section>
