@@ -287,7 +287,7 @@ export default function LTCLabKidsV2() {
           </div>
           <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
             <ImageLogoChip src={logoUrl} label="LTC Lab" />
-            <LogoChip abbr="Sc" label="Scratch" gradient="from-orange-400 to-pink-500" />
+            <ImageLogoChip src="/scratch-cat-logo-png_seeklogo-431721.png" label="Scratch" />
             <ImageLogoChip src="/html5.png" label="HTML5" />
             <ImageLogoChip src="/CSS3_logo.svg" label="CSS3" />
             <ImageLogoChip src="/Unofficial_JavaScript_logo_2.svg.png" label="JavaScript" />
