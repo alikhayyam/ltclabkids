@@ -28,11 +28,30 @@ jobs:
       - run: npm ci
       - run: npm run build
 
+      - name: Show dist contents for debugging
+        run: |
+          echo "--- dist root ---"
+          ls -la dist || true
+          echo "--- dist/assets ---"
+          ls -la dist/assets || true
+          echo "--- dist/index.html (first 60 lines) ---"
+          sed -n '1,60p' dist/index.html || true
+
+      - name: Ensure favicon is present
+        run: |
+          if [ ! -f dist/favicon.ico ] && [ -f public/favicon.ico ]; then
+            cp public/favicon.ico dist/favicon.ico
+          fi
+
       - name: Include CNAME and disable Jekyll
         run: |
           mkdir -p dist
           if [ -f CNAME ]; then cp CNAME dist/CNAME; fi
           touch dist/.nojekyll
+
+      - name: Stamp build
+        run: |
+          echo "<!-- deployed by GitHub Actions at $(date -u) -->" >> dist/index.html
 
       - uses: actions/upload-pages-artifact@v3
         with:
