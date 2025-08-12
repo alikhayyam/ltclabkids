@@ -10,7 +10,6 @@ import {
   Users,
   ArrowRight,
   CheckCircle2,
-  LayoutGrid,
   Sparkles,
   Star,
   HeartHandshake,
@@ -120,9 +119,11 @@ export default function LTCLabKidsV2() {
       <header className="sticky top-0 z-20 border-b border-neutral-200 bg-white/80 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
           <div className="flex items-center gap-3">
-            <div className="grid h-10 w-10 place-items-center rounded-2xl bg-gradient-to-br from-indigo-600 to-fuchsia-600 text-white shadow-sm">
-              <LayoutGrid className="h-5 w-5" />
-            </div>
+            <img
+              src="/Pictures/LTC%20LOGO.png"
+              alt="LTC Lab Kids Logo"
+              className="h-10 w-10 rounded-2xl object-contain shadow-sm"
+            />
             <div className="leading-tight">
               <div className="text-sm font-semibold tracking-tight">LTC Lab Kids</div>
               <div className="text-[11px] text-neutral-500">8–14 yaş · 12 aylıq texnologiya səyahəti</div>
@@ -434,8 +435,13 @@ export default function LTCLabKidsV2() {
 
       {/* Footer */}
       <footer className="border-t border-neutral-200 bg-white/70">
-        <div className="mx-auto max-w-6xl px-4 py-6 text-sm text-neutral-600">
-          © {new Date().getFullYear()} LTC Lab Kids · Bakı
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-6 text-sm text-neutral-600">
+          <img
+            src="/Pictures/LTC%20LOGO.png"
+            alt="LTC Lab Kids Logo"
+            className="h-8 w-8 rounded-2xl object-contain"
+          />
+          <span>© {new Date().getFullYear()} LTC Lab Kids · Bakı</span>
         </div>
       </footer>
     </div>
