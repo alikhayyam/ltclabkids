@@ -159,7 +159,12 @@ export default function LTCLabKidsV2() {
                 4 modul, 12 ay. Oyunlaşdırılmış dərslər, layihələr və təqdimatlarla real bacarıqlar. Təhlükəsiz və motivasiyaedici mühit.
               </p>
               <div className="mt-6 flex flex-wrap items-center gap-3">
-                <a href="#apply" className="inline-flex items-center gap-2 rounded-xl bg-neutral-900 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-neutral-800">
+                <a
+                  href="https://wa.me/99451215088"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-xl bg-neutral-900 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-neutral-800"
+                >
                   Demo dərsə yazıl <ArrowRight className="h-4 w-4" />
                 </a>
                 <a href="#modules" className="rounded-xl border border-neutral-300 bg-white px-4 py-2 text-sm font-medium hover:bg-neutral-50">Proqrama bax</a>
