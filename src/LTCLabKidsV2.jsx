@@ -294,7 +294,7 @@ export default function LTCLabKidsV2() {
             <ImageLogoChip src="/arduino-1.svg" label="Arduino" />
             <LogoChip abbr="μB" label="micro:bit" gradient="from-green-500 to-emerald-700" />
             <ImageLogoChip src="/0f04f0b2-a39a-4621-8bb5-1f5f7bf9bf10_mq.jpg" label="Teachable Machine" />
-            <LogoChip abbr="GH" label="GitHub" gradient="from-neutral-800 to-neutral-700" />
+            <ImageLogoChip src="/Octicons-mark-github.svg" label="GitHub" />
             <ImageLogoChip src="/openai.svg" label="OpenAI · GenAI" />
           </div>
         </div>
