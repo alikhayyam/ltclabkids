@@ -74,14 +74,6 @@ const ModuleCard = ({ icon: Icon, title, desc, items, gradient }) => (
   </motion.div>
 );
 
-// Simple logo chip (placeholder style). Replace with real SVGs/logos when hazır.
-const LogoChip = ({ abbr, label, gradient }) => (
-  <div className="flex items-center gap-2 rounded-2xl border border-neutral-200 bg-white p-2.5 shadow-sm">
-    <div className={`grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br ${gradient} text-white text-xs font-bold`}>{abbr}</div>
-    <span className="text-sm text-neutral-800">{label}</span>
-  </div>
-);
-
 // Image version for provided brand logos
 const ImageLogoChip = ({ src, label }) => (
   <div className="flex items-center gap-2 rounded-2xl border border-neutral-200 bg-white p-2.5 shadow-sm">
@@ -292,7 +284,7 @@ export default function LTCLabKidsV2() {
             <ImageLogoChip src="/CSS3_logo.svg" label="CSS3" />
             <ImageLogoChip src="/Unofficial_JavaScript_logo_2.svg.png" label="JavaScript" />
             <ImageLogoChip src="/arduino-1.svg" label="Arduino" />
-            <LogoChip abbr="μB" label="micro:bit" gradient="from-green-500 to-emerald-700" />
+            <ImageLogoChip src="/microbit_logo_icon_248480.png" label="micro:bit" />
             <ImageLogoChip src="/0f04f0b2-a39a-4621-8bb5-1f5f7bf9bf10_mq.jpg" label="Teachable Machine" />
             <ImageLogoChip src="/Octicons-mark-github.svg" label="GitHub" />
             <ImageLogoChip src="/openai.svg" label="OpenAI · GenAI" />
