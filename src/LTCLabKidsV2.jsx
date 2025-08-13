@@ -278,7 +278,7 @@ export default function LTCLabKidsV2() {
             <h3 className="text-lg font-semibold tracking-tight">Öyrənəcəyin texnologiyalar</h3>
           </div>
           <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-            <ImageLogoChip src={logoUrl} label="LTC Lab" />
+            <ImageLogoChip src="/Python-logo-notext.svg.png" label="LTC Lab Python" />
             <ImageLogoChip src="/scratch-cat-logo-png_seeklogo-431721.png" label="Scratch" />
             <ImageLogoChip src="/html5.png" label="HTML5" />
             <ImageLogoChip src="/CSS3_logo.svg" label="CSS3" />
